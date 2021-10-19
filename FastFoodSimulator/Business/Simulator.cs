@@ -45,7 +45,7 @@ namespace FastFoodSimulator.Business
             Cook cook = new Cook(toCook, cookreadyOrders, cookTime);
             Server server = new Server(serverReadyOrders);
 
-            CookTime = cookTime;
+            CookTime0 = cookTime;
             ArrivalTime = customerArrivalTime;
             OrderTakerOrderingTime = orderTakerOrderingTime;
         }
@@ -73,7 +73,7 @@ namespace FastFoodSimulator.Business
 
         public int OrderTakerOrderingTime
         {
-            get { return orderTaker.Time; }
+            get => orderTaker.Time; 
             set
             {
                 orderTaker.Time = value;

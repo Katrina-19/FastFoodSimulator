@@ -10,7 +10,8 @@ namespace FastFoodSimulator.Models
         private List<Orders> orders;
         private Orders current;
         public int _time;
-        public int Time { get { return Time; }
+        public int Time { 
+            get =>_time; 
             set { _time = value; }
         }
         public Orders Current
@@ -21,7 +22,7 @@ namespace FastFoodSimulator.Models
                 current = value;
             }
         }
-        public OrderTaker(List<Orders> toCook, int time=300)
+        public OrderTaker(List<Orders> toCook, int time)
         {
             orders =toCook;
             Time = time;
