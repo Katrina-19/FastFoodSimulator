@@ -82,16 +82,6 @@ namespace FastFoodSimulator.Business
 
         public bool IsSimulatorWorking { get; set; } = true;
 
-       /* public int NumberOfCustomersWaitingToPlaceOrder => listToOrderTaker.Count;
-
-        public string CurrentOrder => cook.Current == null ? "null" : cook.Current.CustomerId.ToString();
-
-        public int CountOfWaitingOrders => toCook.Count;
-
-        public int ContOfCurrentlyAvailableOrders => serverReadyOrders.Count;
-
-        public int CountOfWaitingCustomers => listToServer.Count;*/
-
         public string OrdersReadyToCook
         {
             get

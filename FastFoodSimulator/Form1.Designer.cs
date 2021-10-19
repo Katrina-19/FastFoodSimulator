@@ -146,9 +146,8 @@ namespace FastFoodSimulator
             this.readyId.AutoSize = true;
             this.readyId.Location = new System.Drawing.Point(73, 121);
             this.readyId.Name = "readyId";
-            this.readyId.Size = new System.Drawing.Size(54, 17);
+            this.readyId.Size = new System.Drawing.Size(0, 17);
             this.readyId.TabIndex = 15;
-            this.readyId.Text = "label11";
             // 
             // groupBox4
             // 
@@ -175,9 +174,8 @@ namespace FastFoodSimulator
             this.cookedId.AutoSize = true;
             this.cookedId.Location = new System.Drawing.Point(73, 121);
             this.cookedId.Name = "cookedId";
-            this.cookedId.Size = new System.Drawing.Size(46, 17);
+            this.cookedId.Size = new System.Drawing.Size(0, 17);
             this.cookedId.TabIndex = 13;
-            this.cookedId.Text = "label9";
             // 
             // groupBox3
             // 
@@ -204,9 +202,8 @@ namespace FastFoodSimulator
             this.orderId.AutoSize = true;
             this.orderId.Location = new System.Drawing.Point(81, 125);
             this.orderId.Name = "orderId";
-            this.orderId.Size = new System.Drawing.Size(46, 17);
+            this.orderId.Size = new System.Drawing.Size(0, 17);
             this.orderId.TabIndex = 11;
-            this.orderId.Text = "label7";
             // 
             // groupBox2
             // 
@@ -234,9 +231,8 @@ namespace FastFoodSimulator
             this.buyerId.AutoSize = true;
             this.buyerId.Location = new System.Drawing.Point(73, 125);
             this.buyerId.Name = "buyerId";
-            this.buyerId.Size = new System.Drawing.Size(46, 17);
+            this.buyerId.Size = new System.Drawing.Size(0, 17);
             this.buyerId.TabIndex = 9;
-            this.buyerId.Text = "label5";
             // 
             // btn_start
             // 
