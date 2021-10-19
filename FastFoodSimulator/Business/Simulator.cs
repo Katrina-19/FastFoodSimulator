@@ -82,23 +82,6 @@ namespace FastFoodSimulator.Business
 
         public bool IsSimulatorWorking { get; set; } = true;
 
-        public string OrdersReadyToCook
-        {
-            get
-            {
-                string answer = "";
-                foreach (var order in toCook)
-                {
-                    answer += order.CustomerId + " ";
-                }
-
-                return answer;
-            }
-        }
-
-        public string CurrentOrderTakerOrder =>
-            orderTaker.Current == null ? "null" : orderTaker.Current.CustomerId.ToString();
-
         public void StartFastFoodSimulator()
         {
             IsSimulatorWorking = true;
@@ -106,7 +89,7 @@ namespace FastFoodSimulator.Business
             Task.Run(OrderTakerWork);
             Task.Run(CookWork);
             Task.Run(ServerWork);
-            Task.Run(QueueToServerWork);
+            Task.Run(ListToServerWork);
         }
 
         private void GenerateCustomers()
@@ -157,7 +140,7 @@ namespace FastFoodSimulator.Business
             }
         }
 
-        private void QueueToServerWork()
+        private void ListToServerWork()
         {
             while (IsSimulatorWorking)
             {
